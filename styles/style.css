@@ -1,97 +1,116 @@
 /* ....fonts  ....*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
- /* body */
-body{
-    font-family: 'Ubuntu', sans-serif; 
+
+/* body */
+body {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
 }
-   /* Top Header section styles start */
-.back-ground-banner{
-    background-image: 
-                  url("../images/Banner\ Image.png");
+
+/* Top Header section styles start */
+.back-ground-banner {
+    background-image:
+        url("../images/Banner\ Image.png");
     background-repeat: no-repeat;
     width: 1100px;
-    height:520px ;
-    background-position-y:50px;
-    background-position-x:90%;
+    height: 520px;
+    background-position-y: 50px;
+    background-position-x: 90%;
     background-size: 450px 490px;
     background-color: #161616;
-    margin-left:128px ;
+    margin-left: 128px;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
 }
-.header-banner{
+
+.header-banner {
     height: 500px;
     width: 550px;
     padding-top: 50px;
     padding-left: 80px;
     color: white;
 }
- #top-header{
-        font-size: 50px;
-        font-weight: 800px;
- }
-.live-btn,a{
-         text-decoration: none;
-        color: white;
-    }
-.live-btn{ 
-     text-align: center;
-     background-image:linear-gradient(gray,#00cedd) ;
-     padding:14px 20px;
-     border-radius: 5px;
-     font-size: 18px;
-     height: 25px;
-     width: 110px;
-     box-shadow:2px 3px rgb(79, 78, 78) ;
- }
-  /* Top Header section styles end........ */
-     /* sports section start */
-    /* Main section of sports section... */
-  .main-section{
-   display: flex;
-   align-items: stretch;
-    margin-left:128px ;
-    margin-right:128px ;
-    margin-top: 100px;
-   
-}
-/* button part of main section... */
-/* button part of main section... */
-.button-part{
-    width: 500px;
-   
- }
- .match-btn a{
-    color:black;  
- }
 
- .blog-btn,.blogs-btn a{
-    color:black; 
- }
- .group-btn a{
-      color:black; 
- }
- .match-btn,.group-btn,.blog-btn,.upcoming-btn,.blogs-btn{
-     text-align: center;
-     padding:14px 20px;
-     border-radius: 5px;
-     font-size: 18px;
-     height: 25px;
-     width: 160px;
-     box-shadow:2px 3px rgb(79, 78, 78) ;
-     margin-top: 30px;
-     background-color:white;
-     
- }
- .blog-btn,.upcoming-btn{
-     background-image:linear-gradient(gray,#00cedd) ;
- }
- .all-btn{
-     background-color:rgb(5, 5, 5);
+#top-header {
+    font-size: 50px;
+    font-weight: 800px;
+}
+
+.live-btn,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.live-btn {
+    text-align: center;
+    background-image: linear-gradient(gray, #00cedd);
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 25px;
+    width: 110px;
+    box-shadow: 2px 3px rgb(79, 78, 78);
+}
+
+/* Top Header section styles end........ */
+/* sports section start */
+/* Main section of sports section... */
+.main-section {
+    display: flex;
+    align-items: stretch;
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-top: 100px;
+}
+
+/* button part of main section... */
+/* button part of main section... */
+.button-part {
+    width: 500px;
+
+}
+
+.match-btn a {
+    color: black;
+}
+
+.blog-btn,
+.blogs-btn a {
+    color: black;
+}
+
+.group-btn a {
+    color: black;
+}
+
+.match-btn,
+.group-btn,
+.blog-btn,
+.upcoming-btn,
+.blogs-btn {
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 25px;
+    width: 160px;
+    box-shadow: 2px 3px rgb(79, 78, 78);
+    margin-top: 30px;
+    background-color: white;
+
+}
+
+.blog-btn,
+.upcoming-btn {
+    background-image: linear-gradient(gray, #00cedd);
+}
+
+.all-btn {
+    background-color: rgb(5, 5, 5);
     height: 250px;
     width: 220px;
     display: flex;
@@ -101,13 +120,115 @@ body{
     padding-top: 0;
     padding-left: 15px;
     border-radius: 7%;
- }
+}
+
 /* sport part of main section... */
-.sport-part{
- 
+.sport-part {
+
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 1%;
+    justify-content: center;
+}
+
+.sports-banner img {
+    height: 175px;
+    width: 265px;
+}
+
+.sports-info {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.transfer-btn {
+    padding-left: 10px;
+    text-align: left;
+}
+
+/* .......icons design......... */
+.fa-solid.color {
+
+    color: rgb(201, 5, 5);
+}
+
+.fa-regular.color {
+
+    color: rgb(0, 81, 255);
+}
+
+.sports {
+    border: 1px solid #00cedd;
+    height: 350px;
+    width: 266px;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    box-shadow: 2px 3px #BEBEBE;
+
+}
+
+/* view all button */
+.view-all {
+    text-align: center;
+    visibility: hidden;
+}
+
+.view-btn,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.view-btn {
+    text-align: center;
+    background-image: linear-gradient(gray, #00cedd);
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 25px;
+    width: 110px;
+    box-shadow: 2px 3px rgb(79, 78, 78);
+}
+
+/* footer sytles start.... */
+footer {
+    text-align: center;
+    background-color: black;
+    color: rgb(105, 110, 112);
+    height: 300px;
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+hr {
+    width: 700px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-menu,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*  footer end ......*/
+.flag-part {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     flex-wrap: nowrap;
@@ -116,79 +237,32 @@ body{
     margin-left: 1%;
     justify-content: center;
 }
-.sports-banner,img{
-    height:175px ;
-    width: 265px;
-}
-.sports-info{
-text-align:left;
-padding-left: 10px;
-}
-.transfer-btn{
-    padding-left: 10px;
-    text-align: left;
-}
-   /* .......icons design......... */
-.fa-solid.color{
 
-    color: rgb(201, 5, 5);
-}
-.fa-regular.color{
+.flags {
 
-    color: rgb(0, 81, 255);
-}
-.sports{
-    border:1px solid #00cedd;
-    height: 350px;
-    width: 266px;
+    border: 2px solid #00cedd;
+    text-align: center;
+    border: 1px solid #00cedd;
+    height: 250px;
+    width: 190pxpx;
     border-radius: 10px;
     margin-left: 6px;
-    margin-right: 6px; 
-    box-shadow: 2px 3px #BEBEBE; 
-    margin-bottom: 100px;
-}
- /* view all button */
-.view-all{
- text-align: center;
- visibility: hidden; 
-}
-.view-btn,a{
-    text-decoration: none;
-   color: white;
-}
-.view-btn{ 
-text-align: center;
-background-image:linear-gradient(gray,#00cedd) ;
-padding:14px 20px;
-border-radius: 5px;
-font-size: 18px;
-height: 25px;
-width: 110px;
-box-shadow:2px 3px rgb(79, 78, 78) ;
-}
-    /* footer sytles start.... */
-footer{
-    text-align: center;
-    background-color: black;
-    color:rgb(105, 110, 112);
-    height: 300px;
-    padding-top: 50px;
-   margin-top: 50px;
-   padding-left: 25%;
-   padding-right: 25%;
-   
-}
- hr{
-    width: 700px; 
-}
-.footer-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.footer-menu,a{
-    text-decoration: none;
-   list-style: none;
+    margin-right: 6px;
+    box-shadow: 2px 3px #BEBEBE;
 }
 
-/*  footer end ......*/
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+}
+
+.flags-banner,
+img {
+    width: 100px;
+    height: 60px;
+
+}
