@@ -34,11 +34,11 @@ body{
         font-size: 50px;
         font-weight: 800px;
  }
-.donate-btn,a{
+.live-btn,a{
          text-decoration: none;
         color: white;
     }
-.donate-btn{ 
+.live-btn{ 
      text-align: center;
      background-image:linear-gradient(gray,#00cedd) ;
      padding:14px 20px;
@@ -60,41 +60,48 @@ body{
    
 }
 /* button part of main section... */
+/* button part of main section... */
 .button-part{
-   width: 500px;
+    width: 500px;
+   
+ }
+ .match-btn a{
+    color:black;  
+ }
 
-  
-}
-.match-btn,.blog-btn,.group-btn,a{
-     color:black; 
-}
-.match-btn,.group-btn,.blog-btn,.upcoming-btn{
-    text-align: center;
-    padding:14px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    height: 25px;
-    width: 160px;
-    box-shadow:2px 3px rgb(79, 78, 78) ;
-    margin-top: 30px;
-    background-color:white;
-    
-}
-.blog-btn{
-    background-image:linear-gradient(gray,#00cedd) ;
-}
-.all-btn{
-    background-color:black;
-   height: 250px;
-   width: 220px;
-   display: flex;
-   flex-direction: column-reverse;
-   border: 2px solid #00cedd;
-   padding-bottom: 30px;
-   padding-top: 0;
-   padding-left: 15px;
-   border-radius: 7%;
-}
+ .blog-btn,.blogs-btn a{
+    color:black; 
+ }
+ .group-btn a{
+      color:black; 
+ }
+ .match-btn,.group-btn,.blog-btn,.upcoming-btn,.blogs-btn{
+     text-align: center;
+     padding:14px 20px;
+     border-radius: 5px;
+     font-size: 18px;
+     height: 25px;
+     width: 160px;
+     box-shadow:2px 3px rgb(79, 78, 78) ;
+     margin-top: 30px;
+     background-color:white;
+     
+ }
+ .blog-btn,.upcoming-btn{
+     background-image:linear-gradient(gray,#00cedd) ;
+ }
+ .all-btn{
+     background-color:rgb(5, 5, 5);
+    height: 250px;
+    width: 220px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid #00cedd;
+    padding-bottom: 30px;
+    padding-top: 0;
+    padding-left: 15px;
+    border-radius: 7%;
+ }
 /* sport part of main section... */
 .sport-part{
  
@@ -138,6 +145,26 @@ padding-left: 10px;
     margin-left: 6px;
     margin-right: 6px; 
     box-shadow: 2px 3px #BEBEBE; 
+    margin-bottom: 100px;
+}
+ /* view all button */
+.view-all{
+ text-align: center;
+ visibility: hidden; 
+}
+.view-btn,a{
+    text-decoration: none;
+   color: white;
+}
+.view-btn{ 
+text-align: center;
+background-image:linear-gradient(gray,#00cedd) ;
+padding:14px 20px;
+border-radius: 5px;
+font-size: 18px;
+height: 25px;
+width: 110px;
+box-shadow:2px 3px rgb(79, 78, 78) ;
 }
     /* footer sytles start.... */
 footer{
