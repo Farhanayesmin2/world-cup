@@ -68,7 +68,7 @@ body{
 .match-btn,.blog-btn,.group-btn,a{
      color:black; 
 }
-.match-btn,.group-btn,.blog-btn{
+.match-btn,.group-btn,.blog-btn,.upcoming-btn{
     text-align: center;
     padding:14px 20px;
     border-radius: 5px;
