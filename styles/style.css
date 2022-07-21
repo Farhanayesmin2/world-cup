@@ -27,8 +27,8 @@ body {
     animation: changeBackgroundColor 7s infinite;
 }
 
-.back-ground-banner:hover{
-background-color: darkblue;
+.back-ground-banner:hover {
+    background-color: darkblue;
 
 }
 
@@ -46,36 +46,50 @@ background-color: darkblue;
     transition: width 2s;
 }
 
-#top-header:hover{
+#top-header:hover {
     color: #00cedd;
     transition-timing-function: ease-in-out;
 }
 
-.paragraph:hover{
+.paragraph:hover {
     color: #00cedd;
 }
- /* for animations */
 
- @keyframes changeBackgroundColor {
+/* for header  animations */
+
+@keyframes changeBackgroundColor {
     0% {
-      background-color: #0fb668;
+        background-color: #0fb668;
     }
-    25%{
+
+    12% {
+        background-color: black;
+    }
+
+    25% {
         background-color: aqua;
     }
+
     50% {
-      background-color: #3e0fb6;
+        background-color: #3e0fb6;
     }
-    75%{
+
+    65% {
+        background-color: black;
+    }
+
+    75% {
         background-color: blueviolet;
     }
-    90%{
+
+    90% {
         background-color: darkblue;
     }
+
     100% {
-      background-color: #ad1161;
+        background-color: #ad1161;
     }
-  }
+}
 
 .live-btn {
     text-align: center;
@@ -87,6 +101,7 @@ background-color: darkblue;
     width: 110px;
     box-shadow: 2px 3px rgb(79, 78, 78);
 }
+
 /* Top Header section styles end........ */
 /* sports section start */
 /* Main section of sports section... */
@@ -296,45 +311,47 @@ img {
     height: 60px;
 
 }
+
 /* For Moblie Responsive */
 
 @media screen and (max-width:580px) {
-    
+
     .back-ground-banner {
         background-image:
             url("../images/Banner\ Image.png");
         background-repeat: no-repeat;
-        width: 575px; 
+        width: 575px;
         /* width: auto; */
-         height: 575; 
-       
+        height: 575;
+
         background-position-y: 268px;
         background-position-x: 30%;
         background-size: 250px 250px;
         background-color: #161616;
         margin-left: 30px;
-         margin-top: 30px; 
+        margin-top: 30px;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
-    #top-header{
-margin: 0;
-      padding-top: 0;
-     font-weight: 400;
-     line-height: 2.5rem;
+
+    #top-header {
+        margin: 0;
+        padding-top: 0;
+        font-weight: 400;
+        line-height: 2.5rem;
     }
-    .paragraph{
+
+    .paragraph {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-     .header-banner{
 
-        /* padding: 15px 15px; */
+    .header-banner {
         width: 310px;
         height: 200px;
-        padding-left: 60px;   
-    } 
+        padding-left: 60px;
+    }
 
     .live-btn {
         text-align: center;
@@ -348,28 +365,31 @@ margin: 0;
     }
 
     .main-section {
-        display: flex;  
-        flex-wrap:wrap
+        display: flex;
+        flex-wrap: wrap
     }
-    .button-part{
+
+    .button-part {
         width: 500px;
     }
-.all-btn{
-   border-style: none;
-   background-color: rgb(255, 255, 255);
-   justify-content: center;
-   justify-items: center;
-   
-}
 
-    .sport-part{
+    .all-btn {
+        border-style: none;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+    .sport-part {
         grid-template-columns: repeat(1, 1fr);
         margin-right: 30px;
         padding-right: 30px;
-        
+
     }
 }
 
+/* for tablet view..... */
 
 @media screen and (min-width:581px) and (max-width:1024px) {
     .back-ground-banner {
@@ -384,26 +404,30 @@ margin: 0;
         background-color: #161616;
         margin-left: 30px;
         margin-top: 30px;
-         justify-content: center;
-        align-items: center;  
+        justify-content: center;
+        align-items: center;
     }
-    #top-header{
-    line-height: normal;
-        
+
+    #top-header {
+        line-height: normal;
+
     }
-   .paragraph{
+
+    .paragraph {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+
     }
-    .header-banner{
-      
+
+    .header-banner {
+
         padding: 15px 15px;
         width: 290px;
         height: 60px;
-        padding-left: 60px;   
-    } 
+        padding-left: 60px;
+    }
+
     .live-btn {
         text-align: center;
         background-image: linear-gradient(gray, #00cedd);
@@ -414,40 +438,41 @@ margin: 0;
         box-shadow: 2px 3px rgb(79, 78, 78);
         margin-left: 75px;
     }
-  
+
     .main-section {
-        display: flex;  
-        flex-wrap:wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
-    .sport-part{
+
+    .sport-part {
         grid-template-columns: repeat(2, 1fr);
         margin-right: 30px;
         padding-right: 30px;
-        
+
     }
-    .view-all{
+
+    .view-all {
         padding-top: 50px;
     }
-    .view-btn{
+
+    .view-btn {
         visibility: visible;
-       
+
     }
-    .all-btn{
+
+    .all-btn {
         border-style: none;
         background-color: rgb(255, 255, 255);
-        display:flex;
-      flex-direction: row-reverse;
-      column-gap: 5px;
-     height: 100%;
-     width: 110%;
-     justify-content: center;
-     justify-items: center;
-     
-     }
-    
-   
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 5px;
+        height: 100%;
+        width: 110%;
+        justify-content: center;
+        justify-items: center;
+
+    }
 
 }
 
-
-/* for section mobile resposive */
+/* for section mobile resposive  end*/
