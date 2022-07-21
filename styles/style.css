@@ -24,26 +24,58 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+    animation: changeBackgroundColor 7s infinite;
+}
+
+.back-ground-banner:hover{
+background-color: darkblue;
+
 }
 
 .header-banner {
     height: 500px;
     width: 550px;
     padding-top: 50px;
-    padding-left: 80px;
+    padding-left: 50px;
     color: white;
 }
 
 #top-header {
     font-size: 50px;
     font-weight: 800px;
+    transition: width 2s;
 }
 
-.live-btn,
-a {
-    text-decoration: none;
-    color: white;
+#top-header:hover{
+    color: #00cedd;
+    transition-timing-function: ease-in-out;
 }
+
+.paragraph:hover{
+    color: #00cedd;
+}
+ /* for animations */
+
+ @keyframes changeBackgroundColor {
+    0% {
+      background-color: #0fb668;
+    }
+    25%{
+        background-color: aqua;
+    }
+    50% {
+      background-color: #3e0fb6;
+    }
+    75%{
+        background-color: blueviolet;
+    }
+    90%{
+        background-color: darkblue;
+    }
+    100% {
+      background-color: #ad1161;
+    }
+  }
 
 .live-btn {
     text-align: center;
@@ -55,7 +87,6 @@ a {
     width: 110px;
     box-shadow: 2px 3px rgb(79, 78, 78);
 }
-
 /* Top Header section styles end........ */
 /* sports section start */
 /* Main section of sports section... */
@@ -101,7 +132,6 @@ a {
     box-shadow: 2px 3px rgb(79, 78, 78);
     margin-top: 30px;
     background-color: white;
-
 }
 
 .blog-btn,
@@ -209,7 +239,7 @@ footer {
 }
 
 hr {
-    width: 700px;
+    width: auto;
 }
 
 .footer-menu {
@@ -266,3 +296,158 @@ img {
     height: 60px;
 
 }
+/* For Moblie Responsive */
+
+@media screen and (max-width:580px) {
+    
+    .back-ground-banner {
+        background-image:
+            url("../images/Banner\ Image.png");
+        background-repeat: no-repeat;
+        width: 575px; 
+        /* width: auto; */
+         height: 575; 
+       
+        background-position-y: 268px;
+        background-position-x: 30%;
+        background-size: 250px 250px;
+        background-color: #161616;
+        margin-left: 30px;
+         margin-top: 30px; 
+        justify-content: center;
+        align-items: center; 
+    }
+    #top-header{
+margin: 0;
+      padding-top: 0;
+     font-weight: 400;
+     line-height: 2.5rem;
+    }
+    .paragraph{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+     .header-banner{
+
+        /* padding: 15px 15px; */
+        width: 310px;
+        height: 200px;
+        padding-left: 60px;   
+    } 
+
+    .live-btn {
+        text-align: center;
+        background-image: linear-gradient(gray, #00cedd);
+        border-radius: 5px;
+        font-size: 18px;
+        height: 25px;
+        width: 110px;
+        box-shadow: 2px 3px rgb(79, 78, 78);
+        margin-left: 75px;
+    }
+
+    .main-section {
+        display: flex;  
+        flex-wrap:wrap
+    }
+    .button-part{
+        width: 500px;
+    }
+.all-btn{
+   border-style: none;
+   background-color: rgb(255, 255, 255);
+   justify-content: center;
+   justify-items: center;
+   
+}
+
+    .sport-part{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 30px;
+        padding-right: 30px;
+        
+    }
+}
+
+
+@media screen and (min-width:581px) and (max-width:1024px) {
+    .back-ground-banner {
+        background-image:
+            url("../images/Banner\ Image.png");
+        background-repeat: no-repeat;
+        width: 850px;
+        height: 450px;
+        background-position-y: 200px;
+        background-position-x: 70%;
+        background-size: 250px 250px;
+        background-color: #161616;
+        margin-left: 30px;
+        margin-top: 30px;
+         justify-content: center;
+        align-items: center;  
+    }
+    #top-header{
+    line-height: normal;
+        
+    }
+   .paragraph{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .header-banner{
+      
+        padding: 15px 15px;
+        width: 290px;
+        height: 60px;
+        padding-left: 60px;   
+    } 
+    .live-btn {
+        text-align: center;
+        background-image: linear-gradient(gray, #00cedd);
+        border-radius: 5px;
+        font-size: 18px;
+        height: 25px;
+        width: 110px;
+        box-shadow: 2px 3px rgb(79, 78, 78);
+        margin-left: 75px;
+    }
+  
+    .main-section {
+        display: flex;  
+        flex-wrap:wrap;
+    }
+    .sport-part{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 30px;
+        padding-right: 30px;
+        
+    }
+    .view-all{
+        padding-top: 50px;
+    }
+    .view-btn{
+        visibility: visible;
+       
+    }
+    .all-btn{
+        border-style: none;
+        background-color: rgb(255, 255, 255);
+        display:flex;
+      flex-direction: row-reverse;
+      column-gap: 5px;
+     height: 100%;
+     width: 110%;
+     justify-content: center;
+     justify-items: center;
+     
+     }
+    
+   
+
+}
+
+
+/* for section mobile resposive */
